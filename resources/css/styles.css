@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 18px;
+  color: white;
+  font-family: Helvetica;
+}
+
+/*HEADER SECTION*/
+header{
+  background-color: black;
+  color: white;
+  position:fixed;
+  width: 100%;
+  top:0;
+}
+.header-content{
+  display:flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-left: 12%;
+}
+.header-content h5{
+  margin: .66rem auto .66rem .5rem;
+}
+.header-content img{
+  height:1.5rem;
+  margin: .66rem .5rem;
+}
+/*END HEADER SECTION*/
+
+/*MAIN CONTAINER SECTION START*/
+.main-container{
+  background-image: url("C:/Users/joshy/OneDrive/Documents/projects/SecretAgentSupply/resources/images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  display:flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.message-box{
+  align-self: flex-start;
+  background-color: black;
+  font-weight: bold;
+  width: 23rem;
+  margin: auto 5%;
+}
+.message-box h4{
+  font-size: 2rem;
+  margin: .25rem auto 1.80rem 3rem;
+}
+.message-box h5{
+  font-size: 1rem;
+  margin: 2rem auto .25rem 3rem;
+}
+.item-nav{
+width: 100%;
+background-color: firebrick;
+
+/*position: relative;
+right: 12.5rem;*/
+}
+nav{
+  display:flex;
+  justify-content:space-around;
+  width:auto;
+}
+nav span{
+  margin: 0.75rem auto;
+}
