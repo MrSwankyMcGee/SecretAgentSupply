@@ -60,17 +60,31 @@ header{
   font-size: 1rem;
   margin: 2rem auto .25rem 3rem;
 }
-.item-nav{
+/*.item-nav{
 width: 100%;
 background-color: firebrick;
-}
-nav{
+}*/
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: firebrick;
+  }
+
+.browser-nav{
   display:flex;
-  justify-content:space-around;
-  width:auto;
+  justify-content: flex-start;
+  width: 100% ;
+list-style: none;
 }
-nav span{
+nav li{
+
   margin: 0.75rem auto;
+}
+.mobile-nav{
+  display: none;
 }
 /*MAIN CONTAINER SECTION END*/
 /*ITEMS AND LOCATION SECTION START*/
@@ -105,6 +119,10 @@ nav span{
   margin: .5rem auto 0 auto;
   padding-top: .25rem;
 }
+
+.mobile-item-container{
+  display: none;
+}
 /*LOCATION SECTION*/
 .location-container{
   display: flex;
@@ -124,6 +142,8 @@ nav span{
 .location-container p{
   color: black;
 }
+/*END LOCATIONS AND HOURS SECTION*/
+/*FOOTER SECTION START*/
 
 
 footer{
@@ -134,4 +154,45 @@ footer{
   background-color: black;
   height: 5rem;
   text-align: left;
+}
+/*FOOTER SECTION END*/
+
+/************MEDIA QUERIES*************/
+
+@media only screen and (max-width: 1024px){
+   .mobile-nav{
+     display: block;
+     text-align: center;
+     list-style: none;
+   }
+   .browser-nav{
+     display:none;
+   }
+   .item-container{
+     display: none;
+   }
+   .mobile-item-container{
+     display: flex;
+     justify-content: space-around;
+
+   }
+   .mobile-item{
+     display:flex;
+     border: black solid 4px;
+     width: 80%;
+     flex-direction: column;
+
+     align-items: center;
+     margin: 3rem 1rem;
+   }
+   .mobile-item img{
+     justify-content:center;
+
+     height: 9rem;
+     margin: 2rem 1rem;
+     max-width: 9em;
+   }
+   .location-container{
+     margin: 3rem 0 0 4rem;
+   }
 }
