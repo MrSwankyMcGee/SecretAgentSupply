@@ -205,13 +205,14 @@ footer{
    }
 }
 
-@media only screen and (max-width: 501px){
+@media only screen and (max-width: 550px){
   .main-container{
-    background-image: url("C:/Users/joshy/OneDrive/Documents/projects/SecretAgentSupply/resources/images/moto.jpeg");
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 25rem;
+    
   /*  display:flex;
     align-items: flex-end;
     flex-direction: column;
