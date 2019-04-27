@@ -9,7 +9,10 @@ html{
   color: white;
   font-family: Helvetica;
 }
-
+a{
+  color: white;
+  text-decoration: none;
+}
 /*HEADER SECTION*/
 header{
   background-color: black;
@@ -212,7 +215,7 @@ footer{
     background-position: center;
     background-size: cover;
     height: 25rem;
-    
+
   /*  display:flex;
     align-items: flex-end;
     flex-direction: column;
